@@ -1,6 +1,5 @@
 import os
 from flask import Flask
-import env
 
 app = Flask(__name__)
 
@@ -11,6 +10,6 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
+    app.run(host=os.environ.get('IP', 'localhost'),
+            port=int(os.environ.get('PORT', '5000')),
             debug=True)
