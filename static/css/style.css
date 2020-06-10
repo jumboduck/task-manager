@@ -1,0 +1,17 @@
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px;
+    padding: 0 0.5em;
+}
+
+.task_header {
+    margin-top: 5px;
+
+}
+
+.urgent {
+    position: relative;
+    top: 5px
+}
